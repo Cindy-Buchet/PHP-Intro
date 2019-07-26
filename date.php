@@ -43,6 +43,22 @@ $dureesejour = (strtotime($datefin) - strtotime($datedebut));
 $nbJours = $dureesejour/86400; // 86 400 = 60*60*24
 echo "Nombre de jours qui sépare aujourd'hui au 16 mai 2016 : ". $nbJours . " jours";
  
+
+// Exercice 6
+echo '<h1>Exercice 6</h1>';
+$number = cal_days_in_month(CAL_GREGORIAN, 2, 2016); // 31
+echo "Il y a $number jours en février 2016";
+
+// Exercice 7
+echo '<h1>Exercice 7</h1>';
+$twentyDays = date ("Y-m-d", strtotime ("+20 days"));
+echo $twentyDays;
+
+// Exercice 8
+echo '<h1>Exercice 8</h1>';
+$twentyDays = date ("Y-m-d", strtotime ("-22 days"));
+echo $twentyDays;
+
 ?>
 
 
